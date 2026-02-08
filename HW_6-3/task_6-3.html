@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            height: 100vh;
+            margin: 40px;
+            background-color: ghostwhite;
+            border: lightsteelblue 3px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .form-registration{
+            width: 60vw;
+            height: 100vh;
+            background-color: white;
+            border-radius: 20px;
+        }
+        .form-registration>div>img{
+            width: 100%;
+            height: 100%;
+        }
+        .form-registration div:nth-child(1){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: ghostwhite;
+            margin: 50px 250px 40px 250px;
+            height: 25%;
+        }
+        .form-registration div:nth-child(1) h3{
+            font-size: 26px;
+            font-weight: 400;
+        }
+        .form-registration form{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+        }
+        input[type="text"],
+        input[type="password"]{
+            width: 1000px;
+            height: 80px;
+            margin: 15px;
+            font-size: 50px;
+        }
+        .form-registration>form>div{
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 15px;
+        }
+        input[type="submit"]{
+            background-color: lightsteelblue;
+            width: 60vw;
+            height: 80px;
+            border-radius: 100px;
+            border: 1px solid grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-registration">
+        <div>
+            <img src="IMG/Instagram_logo.jpg" alt="">
+        </div>
+        <form>
+            <input type="text" name="login" placeholder="Номер телефону, ім'я користувача або email">
+            <input type="password" name="password" placeholder="Пароль">
+            <div>
+<!--                <label>-->
+<!--                    Запам'ятати мене-->
+<!--                    <input type="checkbox" name="remember">-->
+<!--                </label>-->
+            <input type="submit" value="Увійти">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
